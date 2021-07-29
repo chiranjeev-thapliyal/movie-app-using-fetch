@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./youtube.png" alt="navbar logo" />
+        <form id="movieInput" onsubmit="getMovie(event)">
+          <input type="text" id="title" />
+          <button type="submit">Search Movie</button>
+        </form>
+        <img src="./user.png" alt="user" />
+      </div>
+
+      <div id="searchResult">
+        <!-- <div class="card">
+			<span class="recommended"><i class="fas fa-star"></i> Recommended</span>
+          <img
+            class="cardImage"
+            src="https://i.ytimg.com/vi/1_C8vF0JYc8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDp4kaPBve8EtrENN23k5U62t4GCQ"
+            alt=""
+          />
+          <div class="content">
+            <h3 class="cardTitle">
+              Pravin, Tarundeep eliminated in the round of 32 | #Tokyo2020
+              Highlights
+            </h3>
+            <span class="cardProduction"
+              >Universal Pictures <i class="fas fa-check-circle"></i
+            ></span>
+            <span class="cardRelease">Release: 2017</span>
+            <span class="cardRating">imdb Rating: 4.4</span>
+            <span class="cardPlayTime">2:42</span>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- <div id="singleMovie">
+        <span class="cross" onclick="closeMovie()"><i class="fas fa-times"></i></span>
+        <div class="card_left">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMTkwMTgwODAxMl5BMl5BanBnXkFtZTgwNTEwNTQ3MDI@._V1_SX300.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_right">
+          <h1>KILL BILL: VOL. 1</h1>
+          <ul class="card_right-details">
+            <li>2003</li>
+            <li>111 min</li>
+            <li>Action</li>
+          </ul>
+		  <div class="card_right-rating">IMDB Rating: 8.7/10</div>
+          <p class="card_right-review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            voluptas facere pariatur reiciendis accusamus omnis deleniti
+            recusandae aut, consectetur fuga consequuntur tempore. Quis, ratione
+            perferendis eum maxime est eius aut.
+          </p>
+          <button class="card_right-button">Watch Trailer</button>
+        </div>
+      </div>
+    </div> -->
+
+	<div id="movieError">
+		<img src="./welcome.gif" alt="">
+		<h1>You can search your favorite movie here!</h1>
+	</div>
+
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+  </body>
+</html>
+
+<script
+  src="https://kit.fontawesome.com/7fc87d8fcc.js"
+  crossorigin="anonymous"
+></script>
+<script src="./home.js"></script>
